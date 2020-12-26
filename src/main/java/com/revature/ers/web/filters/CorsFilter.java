@@ -35,7 +35,7 @@ public class CorsFilter implements Filter {
 		
 		// Cast the response as an HttpServletResponse
 		// Which is important, because we are going to set
-		// headers, which is specific to HTTP
+		// headers, which is specific to HTTP ewefwe
 		HttpServletResponse res = (HttpServletResponse) response;
 		
 		res.setHeader("Access-Control-Allow-Origin", "https://s3.amazonaws.com/com.revature.ers/"); // Allow all origins
