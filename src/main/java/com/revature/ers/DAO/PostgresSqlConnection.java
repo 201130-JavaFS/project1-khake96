@@ -20,9 +20,9 @@ public class PostgresSqlConnection {
 			e.printStackTrace();
 		}
 		
-		String url = "jdbc:postgresql://localhost:5432/ers";
-		String username = "postgres";
-		String password = "postgres"; 
+		String url = System.getenv("AWSpostgresPath");
+		String username = System.getenv("postgresUserName");
+		String password = System.getenv("postgresPassword"); 
 		
 		return DriverManager.getConnection(url, username, password);
 	}
