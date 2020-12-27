@@ -1,6 +1,6 @@
 FROM tomcat:9.0.41
 
-COPY ./target/*.war /usr/local/tomcat/webapps/ers.war
+COPY target/*.war /usr/local/tomcat/webapps/ers.war
 
 ENV postgresUserName=postgres
 ENV postgresPassword=postgres
