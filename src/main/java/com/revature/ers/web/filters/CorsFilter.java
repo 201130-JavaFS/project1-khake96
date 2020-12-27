@@ -20,7 +20,7 @@ public class CorsFilter implements Filter {
 	 * Origin requests
 	 * 
 	 * However, we can have filters to detect certain requests, and perhaps deny them
-	 * before they even reach a Servlet weqer
+	 * before they even reach a Servlet w
 	 */
 	@Override
 	public void doFilter(ServletRequest request, ServletResponse response, FilterChain chain)
