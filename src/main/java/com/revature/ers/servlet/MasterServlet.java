@@ -61,6 +61,8 @@ public class MasterServlet extends HttpServlet {
 			case "employeeHistory":
 				requestHistory.getRequestHistory(req, res);
 				break;
+			case "test":
+				res.setStatus(200);
 			}
 		}
 	
