@@ -1,4 +1,4 @@
-const url = 'http://18.207.234.232:8090/revature_ers/';
+const url = 'https://18.207.234.232:8090/revature_ers/';
 
 let user = null;
 document.getElementById("loginButton").addEventListener('click', validateLoginForm);
@@ -37,7 +37,7 @@ async function oneEmployeeHistory(employeeId) {
       credentials:'include'
       // Credentials:include will ensure that the cookie is captured for future fectch requests
       // It will also require this value in order to send the cookie back.
-    });  
+    }); 
   } 
   catch(err) {
     document.getElementById("serverErrorPara").innerHTML = err;
@@ -497,40 +497,6 @@ function getReimbStatusAsString(statusId) {
   return reimbStatus;
 };
 
-// function getFile(isEmployee){
-//   let file;
-//   if (isEmployee="receipt") {
-//     file = document.getElementById("receipt").value;
-//   } else file = document.getElementById("receipt2").value;
-
-//   console.log(file); // see the FileList
-//   let BtnEle = document.querySelector(".Btn");
-//   let resEle = gdocument.querySelector(".result");
-//   BtnEle.addEventListener("click", () => {
-//      fetch("https://i.picsum.photos/id/222/300/300.jpg")
-//      .then(function (response) {
-//         return response.blob();
-//      })
-//      .then(function (blob) {
-//         resEle.innerHTML = "blob.size = " + blob.size + "<br>";
-//         resEle.innerHTML += "blob.type = " + blob.type + "<br>";
-//      });
-//   });
-  // manually create a new file obj for each File in the FileList
-
-//  let   fileObject = {
-//         'lastMod'    : file.lastModified,
-//         'lastModDate': file.lastModifiedDate,
-//         'name'       : file.name,
-//         'size'       : file.size,
-//         'type'       : file.type,
-//   }
-
-//   //stringify array
-//   console.log(JSON.stringify(fileObject));
-//   return file;
-// }
-
 async function newRequestFunc() {
   let resp;
  // let receipt = getFile();
@@ -680,7 +646,7 @@ async function loginFunc() {
     {
         method:'POST',
         body: JSON.stringify(login),
-        credentials:'include'
+        // credentials:'include'
         // Credentials:include will ensure that the cookie is captured for future fectch requests
         // It will also require this value in order to send the cookie back.
     });  
