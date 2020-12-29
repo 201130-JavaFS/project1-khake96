@@ -646,7 +646,7 @@ async function loginFunc() {
     {
         method:'POST',
         body: JSON.stringify(login),
-        // credentials:'include'
+        credentials:'include'
         // Credentials:include will ensure that the cookie is captured for future fectch requests
         // It will also require this value in order to send the cookie back.
     });  
