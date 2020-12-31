@@ -1,4 +1,4 @@
-const url = 'https://18.207.234.232:8080/revature_ers/';
+const url = 'https://http://35.175.149.44/:8085/revature_ers/';
 
 let user = null;
 document.getElementById("loginButton").addEventListener('click', validateLoginForm);
